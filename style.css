@@ -1,0 +1,95 @@
+/* Reset margin and padding for all elements */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* Ensure html and body take up the full height of the viewport */
+html, body {
+    height: 100%;
+}
+
+/* Background gradient for the body */
+body {
+    background: rgb(255, 132, 100);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 132, 100, 1) 0%,
+        rgba(253, 105, 165, 1) 100%
+    );
+    display: flex; /* Centers the .container vertically and horizontally */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Flex container to center the .card-body */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Styling for the card body */
+.card-body {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a floating effect */
+}
+
+/* Title styling */
+.card-body h1 {
+    margin-bottom: 15px;
+    font-size: 70px;
+    color: #333; /* Ensures the text is legible */
+}
+
+/* Button container styling */
+.card-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adds spacing between buttons */
+}
+
+/* General button styling */
+.card-btn button {
+    border-radius: 5px;
+    color: #262626;
+    padding: 10px 35px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition for background and text color */
+}
+
+/* Specific button styles and hover effects */
+button#decrement {
+    background: #f6e58d;
+}
+
+button#decrement:hover {
+    background: #f79f1f;
+    color: #fff;
+}
+
+button#reset {
+    background: #f3a683;
+}
+
+button#reset:hover {
+    background: #ea2027;
+    color: #fff;
+}
+
+button#increment {
+    background: #c4e538;
+}
+
+button#increment:hover {
+    background: #009432;
+    color: #fff;
+}
